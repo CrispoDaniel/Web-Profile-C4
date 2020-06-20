@@ -100,7 +100,7 @@ ul li a:hover{
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.103));
     width: 100%;
     height: 100%;
     bottom: 0;
@@ -269,7 +269,7 @@ section{
 .fa-twitter-square:hover,
 .fa-instagram:hover,
 .fa-youtube-square:hover{
-    color: #45e19f;
+    color: #fcd968;
 }
 
 .card-wrapper{
@@ -282,6 +282,10 @@ section{
 .card{
     margin: 2rem;
     transition: transform .5s;
+}
+
+.box:hover{
+    transform:rotate(1deg);
 }
 
 @keyframes fadeIn {
@@ -381,7 +385,7 @@ section{
     .fa-html5:hover,
     .fa-css3-alt:hover,
     .fa-js-square:hover{
-        color:#45e19f;
+        color:#9e9e9e;
     }
 
     .box-wrapper{
