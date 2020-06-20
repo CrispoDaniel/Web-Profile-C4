@@ -1,0 +1,465 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
+    font-size: 17px;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    background-color:rgba(58,81,92, 0.7); 
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; 
+    font-weight: bold;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    width:30%;
+    justify-content: space-between;
+}
+
+header .gambar{
+    width: 50px;
+    border-radius: 50%;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul li{
+    color: #fff;
+}
+
+ul li a:hover{
+    color: #37afa7; 
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 55px;
+    height: 28px;
+    left: -14px;
+    top:-5px;
+    opacity:0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display:block;
+    width:28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+.top-wrapper{
+    padding: 180px 0 430px 0;
+    background-image: url(assets/coverback.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-top{
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: right;
+    margin-right: 15%;
+    margin-top: 7%;
+    letter-spacing: 3px;
+}
+
+.heading-top .top{
+    color:#9ec7c4;
+}
+
+.heading-top .bot{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Card Anggota */
+section{
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after{
+    content:"";
+    width: 10rem;
+    height: .2rem;
+    background-color: #37afa7;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+    border-radius: 9px;
+}
+
+.card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 56% 80%, 0 61%, 0 0);
+    clip-path: polygon(100% 0, 100% 60%, 56% 80%, 0 61%, 0 0);
+    border-radius: 9px;
+}
+
+.profile-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -14rem;
+    z-index: 1;
+    border: 5px solid #ebeef8;
+}
+
+.card h1{
+    font-size: 2.2rem;
+    color:#333;
+    margin:1.5rem 0;
+}
+
+.job{
+    color:#777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color:#333;
+}
+
+.card .btn{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color:#eee;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.card .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+}
+
+.card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.socmed{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.socmed i{
+    font-size: 3rem;
+}
+
+.fa-facebook-square{
+    color: #3b5999;
+}
+
+.fa-twitter-square{
+    color: #55acee;
+}
+
+.fa-instagram{
+    color: #e6683c;
+}
+
+.fa-youtube-square{
+    color: #e6683c;
+}
+
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-youtube-square:hover{
+    color: #45e19f;
+}
+
+.card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 2rem;
+    transition: transform .5s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+    .card:nth-child(1){
+        animation: fadeIn .5s .5s backwards;
+    }
+
+    .card:nth-child(2){
+        animation: fadeIn .5s .1s backwards;
+    }
+
+    .card:nth-child(3){
+        animation: fadeIn .5s 1.5s backwards;
+    }
+
+    .card:nth-child(4){
+        animation: fadeIn .5s 2s backwards;
+    }
+
+    .card:nth-child(5){
+        animation: fadeIn .5s .5s backwards;
+    }
+
+    .card:hover{
+        transform: scale(1.03);
+    }
+
+/* Materi Pelatihan */
+    #materi {
+        padding: 3rem 0;
+        background-color: #dfdfdf;
+    }
+
+    .box-wrapper{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .box{
+        width: 32rem;
+        background-color: #ebeef8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+        border-radius: 3px;
+    }
+
+    .box h1{
+        font-size: 2.2rem;
+
+        color:#333;
+        margin:1rem 0;
+    }
+
+    .deskripsi-pelatihan{
+        font-size: 1.5rem;
+
+        text-align: center;
+        color:#333;
+        margin-bottom: 2rem;
+    }
+
+    .icon-materi li{
+        list-style: none;
+    }
+
+    .icon-materi i{
+        font-size: 15rem;
+        margin-top: 2rem;
+    }
+
+    .fa-html5{
+        color:#e44d26;
+    }
+
+    .fa-css3-alt{
+        color:#264de4;
+    }
+
+    .fa-js-square{
+        color:#f7df1e;
+    }
+
+    .fa-html5:hover,
+    .fa-css3-alt:hover,
+    .fa-js-square:hover{
+        color:#45e19f;
+    }
+
+    .box-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        margin: 2rem;
+    }
+
+/* Animasi Menu Hamburger */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0; /*ujung poros sumbu x dan y*/
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%; /*ujung poros sumbu x dan y*/
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* animasi ngilang */
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Scroll Top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .scroll a{
+      width: 50px;
+      height: 50px;
+      background-color: rgba(58,81,92, 0.7);
+      padding-left: 14px;
+      padding-top: 7px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  footer {
+    /* padding-top: 30px;
+    padding-bottom: 20px; */
+    display: flex;
+    background-color:rgba(58,81,92, 0.7); 
+    justify-content: center;
+    height: 75px;
+    padding:20px;
+    align-items: center;
+  }
+  footer img {
+    width: 170px;
+  }
+
+  footer .gambar{
+      width: 50px;
+      border-radius: 50%;
+  }
+  
+  footer p {
+    color:white;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }

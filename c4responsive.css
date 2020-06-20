@@ -1,0 +1,75 @@
+/* Responsive */
+
+/* Untuk tablet */
+@media screen and (max-width:1000px){
+    header ul{
+        width:40%; 
+    }
+}
+
+
+/* Untuk smartphone */
+@media screen and (max-width:670px){
+    .menu-toggle{
+        display:flex;
+    }
+
+    header ul{
+        position:absolute;
+        right: 0;
+        top:0;
+        width: 70%;
+        height:100vh; /*tinggi dari layar yang kita lihat*/
+        justify-content:space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(58,81,92, 0.7);  
+        z-index: -1;
+        transform:translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        top:75px;
+    }
+
+    header ul.slide{
+        opacity:1;
+        transform:translateX(0);
+    }
+    .strip{
+        display: none;
+    }
+
+    .top-wrapper{
+        font-size: 13px;
+    }
+
+    .top-wrapper .heading-top{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer p {
+        color:white;
+        font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+      }
+
+   
+
+    
+}
+
+/* @media screen and (min-width:700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+} */
