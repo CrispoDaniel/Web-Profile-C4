@@ -212,6 +212,7 @@ section{
     font-style: italic;
     text-align: center;
     color:#333;
+    padding: 15px;
 }
 
 .card .btn{
